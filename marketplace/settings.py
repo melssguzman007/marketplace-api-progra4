@@ -7,9 +7,6 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
-
 SECRET_KEY = config("SECRET_KEY", default="unsafe-secret-key")
 DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = ["*"] # Permite cualquier host en Render
@@ -25,7 +22,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', # Django Rest Framework
-    'users',          # Nuestra nueva app
+    'users', # Nuestra nueva app
+    'users.apps.UsersConfig',
 ]
 
 REST_FRAMEWORK = {

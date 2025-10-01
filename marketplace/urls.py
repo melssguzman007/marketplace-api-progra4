@@ -24,4 +24,5 @@ urlpatterns = [
     # ⬇️ Rutas de la API de Usuarios ⬇️
     path('api/', include('users.urls')),
     # ⬆️ Rutas de la API de Usuarios ⬆️
+    path('api/form/', include('users.urls_form')),
 ]
