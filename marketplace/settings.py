@@ -22,7 +22,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', # Django Rest Framework
-    'users', # Nuestra nueva app
     'users.apps.UsersConfig',
 ]
 
